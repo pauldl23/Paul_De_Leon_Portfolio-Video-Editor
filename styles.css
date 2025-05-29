@@ -614,3 +614,129 @@ button[type="submit"]:hover {
         transform: translateY(0);
     }
 }
+
+
+/* Main background */
+
+
+/* Neon title effect */
+
+.neon-text {
+    color: #ffffff;
+    text-shadow: 0 0 5px #7f5af0, 0 0 10px #7f5af0, 0 0 20px #7f5af0, 0 0 40px #7f5af0;
+}
+
+
+/* Section headings */
+
+.section-title {
+    color: #9a5eff;
+    font-weight: bold;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+/* Skill list items */
+
+.skill-list li {
+    font-size: 1.5rem;
+    padding: 0.3rem 0;
+    transition: all 0.3s ease;
+}
+
+.skill-list li:hover {
+    color: #7f5af0;
+    transform: scale(1.05);
+}
+
+
+/* Glow on hover effect */
+
+.hover-glow {
+    text-shadow: 0 0 5px #7f5af0, 0 0 10px #7f5af0, 0 0 20px #7f5af0;
+}
+
+
+/* === Animated Gradient Circles === */
+
+.animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.gradient-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: float 10s infinite alternate ease-in-out;
+    background: radial-gradient(circle, #7f5af0, transparent 70%);
+}
+
+.circle1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.circle2 {
+    width: 400px;
+    height: 400px;
+    bottom: 20%;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    bottom: 10%;
+    left: 40%;
+    animation-delay: 5s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+    100% {
+        transform: translateY(-20px) translateX(10px);
+    }
+}
+
+
+/* === Fade In Animation === */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeIn 1s ease forwards;
+}
+
+.fade-in.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.fade-in.delay-2 {
+    animation-delay: 1s;
+}
+
+.fade-in.delay-3 {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
